@@ -37,7 +37,7 @@ public class RestConfig {
         public ClientHttpRequestFactory get() {
             HttpComponentsClientHttpRequestFactory requestFactory = null;
             try {
-                char[] pass = "pracaDyplomowa".toCharArray();
+                char[] pass = "password".toCharArray();
                 KeyStore ks = KeyStore.getInstance("JKS");
                 InputStream ksInput = this.getClass().getClassLoader().getResourceAsStream("javaclient.jks");
                 ks.load(ksInput, pass);
