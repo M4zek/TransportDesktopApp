@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="vbox" stylesheets="@../css/menageVehicleType.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mazi.transportdesktopapp.Controller.MenagerVehicleTypeController">
+   <children>
+      <Label styleClass="title_label" text="Zarządzanie typami pojazdów" />
+      <HBox>
+         <children>
+            <Label styleClass="subtitle_label" text="Dodaj" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <TextField fx:id="textField_newType" styleClass="textField">
+         <VBox.margin>
+            <Insets top="-10.0" />
+         </VBox.margin>
+      </TextField>
+      <JFXButton fx:id="button_addNewType" styleClass="custom_ok_button" text="Dodaj" />
+      <HBox>
+         <children>
+            <Label styleClass="subtitle_label" text="Usuń" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <ChoiceBox fx:id="choiceBox_VehicleType" maxWidth="1.7976931348623157E308" />
+      <JFXButton fx:id="button_delete" styleClass="custom_ok_button" text="Usuń" />
+   </children>
+</VBox>

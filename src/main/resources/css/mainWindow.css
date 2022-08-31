@@ -1,0 +1,24 @@
+.headers-region {
+    -fx-background-color: #1b75bc;
+}
+
+.tab-selected-line {
+    -fx-background-color: white;
+}
+
+.headers-region {
+    -fx-background-color: #0A1628;
+}
+
+.jfx-tab-pane {
+    -fx-background-color: #0D1C33;
+}
+
+.tab-header-background {
+    -fx-background-color: #0A1628;
+}
+
+.jfx-button{
+    -fx-background-color: black;
+}
+

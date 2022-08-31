@@ -1,0 +1,82 @@
+.vbox{
+    -fx-background-color: transparent;
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+.label_title{
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.label_subtitle{
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.textField{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-text-size: 12px;
+}
+
+.textField: hover{
+    -fx-background-color: rgba(100,100,100, 0.3);
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: white;
+}
+
+.textField: focused{
+    -fx-background-color: rgba(100,100,100, 0.3);
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: white;
+}
+
+.pane{
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: orange;
+    -fx-top-padding: -10px;
+}
+
+.button_custom{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: #0059DE;
+}
+
+.button_custom: hover{
+    -fx-background-color: rgba(100,100,100,0.3);
+}
+
+.choice_box{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: white;
+    -fx-text-fill: orange;
+}
+
+.choice_box .label{
+    -fx-text-fill: white;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: lightgrey;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: orange;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: black;
+}
+
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: black;
+}

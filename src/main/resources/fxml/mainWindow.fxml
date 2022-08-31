@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane fx:id="mainTabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../css/mainWindow.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mazi.transportdesktopapp.Controller.MainWindowController">
+   <tabs>
+      <Tab fx:id="tabHome" text="Home">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Witaj w aplikacji desktopowej" textFill="#ffffff30">
+                           <font>
+                              <Font name="System Bold" size="46.0" />
+                           </font>
+                        </Label>
+                        <Label text="MM - Transport" textFill="#ffffff31">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font></Label>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </center></BorderPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tabEmployee" text="Pracownicy" />
+      <Tab fx:id="tabVehicles" text="Pojazdy" />
+      <Tab fx:id="tabOrders" text="Zlecenia" />
+      <Tab text="Kierowcy" />
+      <Tab fx:id="tabChat" text="Chat" />
+      <Tab fx:id="tabAccount" text="Konto">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+         </content></Tab>
+   </tabs>
+</JFXTabPane>

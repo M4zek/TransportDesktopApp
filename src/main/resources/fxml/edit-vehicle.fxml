@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" minWidth="350.0" styleClass="borderPane" stylesheets="@../css/edit-vehicle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mazi.transportdesktopapp.Controller.EditVehicleController">
+   <top>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="title_label" text="Edytuj pojazd" />
+         </children>
+      </HBox>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="variables_label" text="Typ pojazdu" />
+            <ChoiceBox fx:id="choiceBox_vehicleType" maxWidth="1.7976931348623157E308" />
+            <Label styleClass="variables_label" text="Marka" />
+            <TextField fx:id="textField_mark" styleClass="textField" />
+            <Label styleClass="variables_label" text="Model" />
+            <TextField fx:id="textField_model" styleClass="textField" />
+            <Label styleClass="variables_label" text="Przebieg" />
+            <TextField fx:id="textField_mileage" styleClass="textField" />
+            <Label styleClass="variables_label" text="Numer VIN" />
+            <TextField fx:id="textField_vinNumber" styleClass="textField" />
+            <Label styleClass="variables_label" text="Masa całkowita" />
+            <TextField fx:id="textField_weight" styleClass="textField" />
+            <Label styleClass="variables_label" text="Numer rejestracyjny" />
+            <TextField fx:id="textField_plateNumber" styleClass="textField" />
+            <Label styleClass="variables_label" text="Termin badania technicznego" />
+            <JFXDatePicker fx:id="datePicker_dateOfTechnicalInspection" defaultColor="WHITE" maxWidth="1.7976931348623157E308" styleClass="jfx-date-picker" VBox.vgrow="ALWAYS" />
+            <HBox alignment="CENTER" spacing="10.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="button_close" minWidth="75.0" styleClass="custom_close_button" text="Zamknij" />
+                  <JFXButton fx:id="button_update" minWidth="75.0" styleClass="custom_ok_button" text="Aktualizuj" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

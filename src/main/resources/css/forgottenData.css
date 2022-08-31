@@ -1,0 +1,42 @@
+.borderPane{
+    -fx-background-color: #3d3d3d;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-color: white;
+}
+
+.label{
+    -fx-text-fill:WHITE;
+}
+
+.textField{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+
+.custom_button_white{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: white;
+}
+
+.custom_button_red: hover{
+    -fx-background-color: red;
+}
+
+.custom_button_red{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: red;
+}
+
+.custom_button_blue: hover{
+    -fx-background-color: #0059DE;
+}
+
+.custom_button_blue{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: #0059DE;
+}

@@ -1,0 +1,56 @@
+
+.borderPane{
+    -fx-background-color: #0D1C33;
+}
+
+.name_of_app{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.log_in{
+    -fx-text-fill:#FFFFFF;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.button{
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-color: #0059de;
+}
+
+.button: hover{
+    -fx-font-weight: bold;
+}
+
+.label_forgottenData{
+    -fx-font-size: 12px;
+    -fx-font-color: white;
+    -fx-font-style: italic;
+}
+
+.label_forgottenData: hover{
+    -fx-font-weight: bold;
+}
+
+/* TEXT FIELD CSS */
+.text-field{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+
+.hbox{
+     -fx-border-width: 0px 0px 1px 0px;
+     -fx-border-color: white;
+}
+
+.hbox: hover {
+   -fx-background-color: rgba(100,100,100,0.2);
+   -fx-background-radius: 5px 5px 0px 0px;
+}
+/* ----------------------*/
+
+

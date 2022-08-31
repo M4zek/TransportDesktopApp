@@ -1,0 +1,133 @@
+.borderPane{
+        -fx-background-color: #0D1C33;
+        -fx-border-width: 1px 1px 1px 1px;
+        -fx-font-weight: bold;
+        -fx-border-color: white;
+}
+
+.title_label{
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+
+.variables_label{
+    -fx-padding: 10px 0px 0px 0px;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: none;
+}
+
+.choice-box{
+    -fx-background-color: rgba(100,100,100,0.2);
+    -fx-background-radius: 0px;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color:white;
+    -fx-mark-color: orange;
+}
+.choice-box .label{ -fx-text-fill: white; }
+.choice-box .context-menu { -fx-background-color: black; -fx-width: USE_COMPUTED_SIZE}
+.choice-box .menu-item:focused { -fx-background-color: orange; }
+.choice-box .menu-item > .label { -fx-text-fill: white; }
+.choice-box .menu-item:focused > .label { -fx-text-fill: black; }
+
+.textField{
+    -fx-background-color: rgba(100,100,100,0.2);
+    -fx-background-radius: 0px;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+
+.textField: hover{
+    -fx-background-color: rgba(100,100,100,0.4);
+    -fx-border-color: lightblue;
+}
+.textField: focused{
+    -fx-background-color: rgba(100,100,100,0.4);
+    -fx-border-color: lightblue;
+}
+
+
+
+.date-picker-popup .label {
+    -fx-text-fill: WHITE;
+}
+.date-picker-popup > *{
+    -fx-background-color: #0A1628 ;
+}
+
+.jfx-date-picker{
+    -fx-background-color: rgba(100,100,100,0.2);
+}
+
+.jfx-date-picker: hover{
+    -fx-background-color: rgba(100,100,100,0.3);
+}
+.jfx-date-picker .date-picker-popup .calendar-grid .day-cell:hover,
+.jfx-date-picker .data-picker-list-cell {
+    -fx-background-color: #0D1C33;
+    -fx-cursor: hand;
+    -fx-text-fill: white
+}
+
+.jfx-date-picker .date-picker-popup .calendar-grid .day-cell:focused{
+    -fx-background-color: rgba(0,89,222,1.0);
+    -fx-cursor: hand;
+    -fx-text-fill: white
+}
+
+.jfx-date-picker .date-picker-popup .calendar-grid .day-cell:hover,
+.jfx-date-picker .data-picker-list-cell:hover {
+    -fx-background-color: orange;
+    -fx-cursor: hand;
+}
+
+
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: #0A1628;
+}
+
+.jfx-date-picker .date-picker-popup .calendar-grid{
+    -fx-background-color: #0A1628;
+}
+
+.jfx-date-picker .date-picker-popup .calendar-grid .day-cell{
+    -fx-text-fill: WHITE;
+    -fx-text-background: orange;
+}
+
+
+.jfx-date-picker .date-picker-popup .calendar-grid .month-cell{
+    -fx-text-fill: BLACK;
+}
+
+.jfx-date-picker .jfx-button{ -fx-font-color: WHITE }
+
+.jfx-date-picker .text-field{
+    -jfx-unfocus-color: transparent;
+    -jfx-focus-color: lightblue;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+
+ }
+/* ---------------------------------- */
+
+.custom_ok_button{
+    -fx-background-color: rgba(0,89,222,1.0);
+    -fx-text-fill: white;
+}
+
+.custom_ok_button: hover{
+    -fx-background-color: rgba(0,89,222,0.5);
+    -fx-text-fill: white;
+}
+
+.custom_close_button{
+    -fx-background-color: rgba(255,0,0,1.0);
+    -fx-text-fill: white;
+}
+
+.custom_close_button: hover{
+    -fx-background-color: rgba(255,0,0,0.5);
+    -fx-text-fill: white;
+}

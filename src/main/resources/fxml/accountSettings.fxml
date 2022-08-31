@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="borderPane" stylesheets="@../css/accountSettings.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mazi.transportdesktopapp.Controller.AccountController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <center>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" VBox.vgrow="ALWAYS" />
+            <Label styleClass="title_label" text="Dane użytkownika">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox fx:id="vBox_firstName" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="vbox_custom" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="input_label" text="Imię" VBox.vgrow="ALWAYS" />
+                        <TextField fx:id="textField_firstName" alignment="CENTER" styleClass="text_field" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBox_lastName" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="vbox_custom">
+                     <children>
+                        <Label styleClass="input_label" text="Nazwisko" VBox.vgrow="ALWAYS" />
+                        <TextField fx:id="textField_lastName" alignment="CENTER" styleClass="text_field" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBox_placeOfResidence" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="vbox_custom">
+                     <children>
+                        <Label styleClass="input_label" text="Miejsce zamieszkania" VBox.vgrow="ALWAYS" />
+                        <TextField fx:id="textField_placeOfResidence" alignment="CENTER" styleClass="text_field" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBox_phoneNumber" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="vbox_custom">
+                     <children>
+                        <Label styleClass="input_label" text="Numer telefonu" VBox.vgrow="ALWAYS" />
+                        <TextField fx:id="textField_phoneNumber" alignment="CENTER" styleClass="text_field" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox fx:id="vBox_username" alignment="CENTER" maxHeight="1.7976931348623157E308" styleClass="vbox_custom">
+                     <children>
+                        <Label styleClass="input_label" text="Nazwa użytkownika" VBox.vgrow="ALWAYS" />
+                        <TextField fx:id="textField_Username" alignment="CENTER" styleClass="text_field" />
+                        <Pane maxWidth="-Infinity" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBox_password" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="vbox_custom" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="input_label" text="Hasło" VBox.vgrow="ALWAYS" />
+                        <PasswordField fx:id="passwordField_password" alignment="CENTER" promptText="Nowe hasło" styleClass="text_field" />
+                        <PasswordField fx:id="passwordField_confirmPassword" alignment="CENTER" promptText="Powtórz nowe hasło" styleClass="text_field" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBox_email" alignment="CENTER" maxHeight="1.7976931348623157E308" styleClass="vbox_custom">
+                     <children>
+                        <Label styleClass="input_label" text="Email" VBox.vgrow="ALWAYS" />
+                        <TextField fx:id="textField_email" alignment="CENTER" styleClass="text_field" />
+                        <Pane maxWidth="-Infinity" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <JFXButton fx:id="button_confirm" styleClass="custom_button" text="Potwierdz zmiany">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></JFXButton>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" VBox.vgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="BOTTOM_CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="logout_button" styleClass="custom_button_logout" text="Wyloguj się" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

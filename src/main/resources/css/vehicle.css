@@ -1,0 +1,29 @@
+.borderPane{
+    -fx-background-color: #0D1C33;
+}
+
+.custom_button_blue{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: #0059DE;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.custom_button_blue: hover{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-background-color: rgba(100,100,100,0.5);
+    -fx-border-color: WHITE;
+}
+
+.custom_button_blue: pressed{
+    -fx-text-fill: lightblue;
+    -fx-border-color: lightblue;
+}
+
+.hbox{
+    -fx-background-color: transparent;
+    -fx-padding: 8px;
+    -fx-spacing: 10px;
+}

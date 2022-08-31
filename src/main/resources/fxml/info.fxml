@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" minHeight="-Infinity" minWidth="-Infinity" styleClass="borderPane" stylesheets="@../css/info.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mazi.transportdesktopapp.Controller.InfoController">
+   <top>
+      <HBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label_title" styleClass="title_label" text="Label" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Pane styleClass="pane" />
+            <Label fx:id="label_message" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="300.0" styleClass="main_label" text="message" wrapText="true" VBox.vgrow="ALWAYS" />
+            <Pane styleClass="pane" />
+            <HBox alignment="CENTER" styleClass="hbox">
+               <children>
+                  <JFXButton fx:id="button_ok" text="Potwierdź" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

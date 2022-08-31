@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="vbox" stylesheets="@../css/add-remove-employeeType.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mazi.transportdesktopapp.Controller.AddRemoveEmployeeType">
+   <children>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="label_title" text="Zarządzaj stanowiskami" VBox.vgrow="ALWAYS" />
+      <Pane styleClass="pane">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin></Pane>
+      <Label styleClass="label_subtitle" text="Dodaj stanowisko" />
+      <TextField fx:id="textField_newEmployeeType" promptText="Wpisz nazwe stanowiska" styleClass="textField" />
+      <HBox alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <JFXButton fx:id="button_add" styleClass="button_custom" text="Dodaj" />
+         </children>
+      </HBox>
+      <Pane styleClass="pane">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin></Pane>
+      <Label styleClass="label_subtitle" text="Usuń stanowisko" />
+      <ChoiceBox fx:id="choiceBox_employeeType" maxWidth="1.7976931348623157E308" styleClass="choice_box" />
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <JFXButton fx:id="button_remove" styleClass="button_custom" text="Usuń" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,92 @@
+.borderPane{
+    -fx-background-color: #0D1C33;
+    -fx-padding: 10px;
+}
+
+.title_label{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+
+
+.input_label{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.vbox_custom{
+    -fx-background-color: rgba(153, 153, 153, 0.1);
+    -fx-background-radius: 10px;
+    -fx-padding: 8px;
+    -fx-spacing: 5px;
+}
+
+.title_label{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.vbox_custom: hover .custom_button_white{
+          -fx-background-color: transparent;
+          -fx-border-width: 0px 0px 1px 0px;
+          -fx-border-color: lightblue;
+          -fx-text-fill: white;
+          -fx-font-weight: bold;
+}
+
+.custom_button_white{
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+.custom_button_logout{
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.custom_button_logout: hover{
+    -fx-border-width: 1px;
+    -fx-border-color: lightblue;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-text-fill: lightblue;
+}
+
+.custom_button{
+          -fx-background-color: transparent;
+          -fx-border-width: 0px 0px 1px 0px;
+          -fx-border-color: white;
+          -fx-text-fill: white;
+          -fx-font-weight: bold;
+          -fx-font-size: 18px;
+}
+
+.custom_button: hover{
+          -fx-background-color: rgba(130,130,130,0.1);
+          -fx-border-color: lightblue;
+}
+
+.text_field{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-font-size: 18px;
+    -fx-text-width: bold;
+}
+
+.text_field: focused{
+    -fx-background-color: rgba(130,130,130,0.1);
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: yellow;
+}
+
+.text_field: hover{
+    -fx-background-color: rgba(130,130,130,0.1);
+}
