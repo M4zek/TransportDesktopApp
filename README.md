@@ -4,7 +4,7 @@ A desktop application for managing a transportation company.
 ## About
 A simple desktop application for managing a transportation company.
 It is based on communication with the [Transport Server](https://github.com/M4zek/TransportServer) via HTTP requests secured with SSL Handshake 
-and a [JSON Web Token](https://jwt.io/introduction) is attached to each request. 
+and each request is attached with a [JSON Web Token](https://jwt.io/introduction) to authenticate the user. At the moment the application is not finished therefore it can be used as a purely database application to store information about employees and vehicles.
 It was implemented using Java, JavaFX and cascading style sheets (CSS).
 
 
@@ -18,7 +18,7 @@ It was implemented using Java, JavaFX and cascading style sheets (CSS).
 - Driver management
 - Driver time management
 - Creating a chat room between employees
-- Management of orders
+- Managing orders and assigning them to drivers
 
 The application is not yet finished while I hope it will be finished in the future.
 
